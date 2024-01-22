@@ -30,12 +30,28 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+  - package-ecosystem: "docker"
+    directory: "/worker"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "docker"
+    directory: "/landing"
+    schedule:
+      interval: "daily"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
   - package-ecosystem: "gomod"
     directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gomod"
+    directory: "/api"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gomod"
+    directory: "/webhook"
     schedule:
       interval: "daily"
   - package-ecosystem: "mix"
